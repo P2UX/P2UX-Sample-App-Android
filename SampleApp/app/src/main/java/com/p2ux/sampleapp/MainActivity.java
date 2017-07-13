@@ -19,8 +19,7 @@ public class MainActivity extends P2UXAppFragmentActivity
     {
         //You can get the app key or license key from builder for your app. This is required to link your builder up to your local app
         // This is the key generated from Builder for the application. This key is needed to initialize the P2UX rendering framework.
-        mAppKey = "0006.f058b95ac4e851b47424d19ff2cd4bf69ec70383187cb5fd0b02a2978f08d13e";
-
+        mAppKey = "0006.f058b95ac4e851b47424d19ff2cd4bf69ec70383187cb5fd0b02a2978f08d13e";      // Adopt A Pet app
         super.onCreate(savedInstanceState);
         applyTranslucentStatusBar();
     }
