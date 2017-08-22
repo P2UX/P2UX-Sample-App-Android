@@ -104,7 +104,7 @@ class SampleAppBehavior extends P2UXAppBehavior
      * Create a custom control
      * This is called from a request to a custom control.
      * @param type The type of the custom control
-     * @param elemInstance
+     * @param elemInstance Contains information on the control such as itemSpec, systemType, etc.
      * @param rect Rect representing size of the custom control area
      * @param viewDelegate The current viewDelegate
      * @param index An index value to pass to the control
