@@ -1,7 +1,7 @@
 package com.p2ux.sampleapp;
 
 import android.content.Context;
-import android.graphics.RectF;
+import android.graphics.Rect;
 import android.view.View;
 
 import com.p2ux.app.components.P2UXAppBehavior;
@@ -46,7 +46,7 @@ class SampleAppBehavior extends P2UXAppBehavior
      * @return A P2UXScreen instance of the view
      */
     @Override
-    public P2UXScreen createScreen(Context context, P2UXDefinition def, RectF rect, Object index, Object data, P2UXViewContainerDelegate viewDelegate)
+    public P2UXScreen createScreen(Context context, P2UXDefinition def, Rect rect, Object index, Object data, P2UXViewContainerDelegate viewDelegate)
     {
         if (def.getSystemType().equals("xxxxx")) {
             //return some screen here, for example:
@@ -70,7 +70,7 @@ class SampleAppBehavior extends P2UXAppBehavior
      * @param viewDelegate The current view delegate
      * @return a custom view fragment
      */
-    public P2UXFragment createViewFragment(int type, Context context, P2UXDefinition def, P2UXFragment.UXFragmentDelegate fragmentDelegate, RectF rect, boolean cache, Object index, Object data, P2UXViewContainerDelegate viewDelegate)
+    public P2UXFragment createViewFragment(int type, Context context, P2UXDefinition def, P2UXFragment.UXFragmentDelegate fragmentDelegate, Rect rect, boolean cache, Object index, Object data, P2UXViewContainerDelegate viewDelegate)
     {
         if (def.getSystemType().equals("xxxxx")) {
             // return SampleFragment(type, context, def, fragmentDelegate, rect, cache, index, data, viewDelegate);
@@ -91,7 +91,7 @@ class SampleAppBehavior extends P2UXAppBehavior
      * @return a custom panel
      */
     @Override
-    public P2UXPanel createPanel(Context context, P2UXDefinition def, RectF rect, Object index, Object data, P2UXViewContainerDelegate viewDelegate)
+    public P2UXPanel createPanel(Context context, P2UXDefinition def, Rect rect, Object index, Object data, P2UXViewContainerDelegate viewDelegate)
     {
         if (def.getSystemType().equals("xxxxx")) {
             //return some screen here, for example:
@@ -112,7 +112,7 @@ class SampleAppBehavior extends P2UXAppBehavior
      * @return custom control
     */
     @Override
-    public View createControl(String type, P2UXElementInstance elemInstance, RectF rect, P2UXViewContainerDelegate viewDelegate, Object index, Object data)
+    public View createControl(String type, P2UXElementInstance elemInstance, Rect rect, P2UXViewContainerDelegate viewDelegate, Object index, Object data)
     {
         if (type != null && !type.isEmpty()) {
             if (type.equals("calendar")) {
